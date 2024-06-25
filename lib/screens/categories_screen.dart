@@ -12,7 +12,7 @@ class CategoryScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Vamos cozinhar!'),
         backgroundColor: Theme.of(context).colorScheme.primary,
-      ), 
+      ),
       body: GridView(
         padding: const EdgeInsets.all(25),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
@@ -21,11 +21,10 @@ class CategoryScreen extends StatelessWidget {
           crossAxisSpacing: 30,
           mainAxisSpacing: 30,
         ),
-        children: dummyCategorys.map((cat) {
+        children: dummyCategories.map((cat) {
           return CategoryItem(cat);
         }).toList(),
-          
-        ),
+      ),
     );
   }
 }
