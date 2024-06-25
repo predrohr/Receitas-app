@@ -3,6 +3,7 @@ import 'package:refeicoes/screens/meal_detail_screen.dart';
 import 'screens/categories_screen.dart';
 import 'screens/categories_meals_screen.dart';
 import 'utils/app_routes.dart';
+import 'screens/tabs_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
                 ),
               )),
       routes: {
-        AppRouts.home: (ctx) => const CategoryScreen(),
+        AppRouts.home: (ctx) => const TabsScreen(),
         AppRouts.categoriesMeal: (ctx) => const CategoriesMealsScreen(),
         AppRouts.mealDetail: (ctx) => const MealDetailScreen(),
       },
