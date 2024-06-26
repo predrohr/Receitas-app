@@ -36,7 +36,10 @@ class MealDetailScreen extends StatelessWidget {
       backgroundColor: Theme.of(context).canvasColor,
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: Text(meal.title),
+        title: Text(
+          meal.title,
+          style: TextStyle(color: Theme.of(context).canvasColor),
+        ),
       ),
       body: SingleChildScrollView(
         child: Center(
